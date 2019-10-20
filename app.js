@@ -21,7 +21,7 @@ var indexRoutes = require("./routes/index");
 
 
 
-mongoose.connect("mongodb://localhost/yelpcamp");
+mongoose.connect("mongodb+srv://manu:cricketer100@its-vj-nzcw6.mongodb.net/test?retryWrites=true&w=majority");
 
 app.use(express.static(__dirname + "/public"));
 

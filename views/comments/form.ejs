@@ -1,0 +1,14 @@
+<% include ../partials/header %>
+
+<h1>Add comment to <%=camp.name%></h1>
+
+<form action="/camp/<%= camp._id %>/comments" method="POST" >
+
+    <label>Text : <input type="text" placeholder="comment" name="comment[text]"> </label>
+   
+    
+    <div>
+        <button>submit</button>
+    </div>
+</form>
+<% include ../partials/footer %>

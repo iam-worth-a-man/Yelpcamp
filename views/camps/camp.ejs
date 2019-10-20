@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+
+
+<div class="container">
+    <div class="jumbotron">
+            <h1>Welcome to Yelpcamp!</h1>
+            <p>Here are the most beautiful campgrounds of the world</p>
+            <a class="btn btn-primary btn-sm" href="/camp/new">Add a new camp</a>
+
+    </div>
+
+    <div class="row" >
+            <% campdata.forEach( function(data){ %>
+        
+                <div class="col-md-3 col-sm-6">
+                    <div class="hi" >
+                            <img  src="<%= data.image %>" >
+                                <div class="caption">
+                                 <%= data.name %>
+                                </div>
+                                <p><a href="/camp/<%= data._id %>"  class="btn btn-primary"> More info </a></p>
+                    </div>
+                        
+                        
+                </div>
+                
+         <% }); %>
+    </div>    
+    
+</div>
+
+
+
+
+
+
+<% include ../partials/footer %>

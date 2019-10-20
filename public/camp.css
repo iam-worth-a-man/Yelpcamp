@@ -1,0 +1,51 @@
+.jumbotron {
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+.hi img {
+    width: 100%;
+}
+
+.hi {
+    padding: 0;
+    border: 1px solid black;
+    text-align: center; 
+    padding: 1px;
+}
+
+.hii {
+ 
+    border: 1px solid black;
+  
+}
+
+.hii img {
+    width: 100%;
+}
+
+.hii .caption {
+    padding: 9px;
+}
+
+.hi .caption {
+    padding: 9px;
+}
+
+.delete {
+    display: inline;
+}
+
+#camphead {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#campform {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}

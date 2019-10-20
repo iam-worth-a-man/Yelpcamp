@@ -1,0 +1,18 @@
+<% include ../partials/header %>
+
+<h1>Edit The Campground Here</h1>
+
+<form action="/camp/<%= campgrd._id %>?_method=PUT" method="POST" >
+
+    <label>First Name : <input type="text" value="<%= campgrd.name %>" name="camp[name]"> </label>
+    <div class="form-group">
+        <label for="ab" >Price : </label>
+        <input id="ab " class="form-control" type="number" min="0.01" step="0.10" name="camp[price]" value="<%= campgrd.price %>"> 
+    </div>
+    <label>Image link : <input type="text" value="<%= campgrd.image %>" name="camp[image]"> </label>
+    <label>Description : <input type="text" value="<%= campgrd.description %>" name="camp[description]"> </label>
+    <div>
+        <button>submit</button>
+    </div>
+</form>
+<% include ../partials/footer %>
